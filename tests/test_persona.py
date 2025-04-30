@@ -1,4 +1,5 @@
 import unittest
+from src.persona import Persona
 
 class testPersona(unittest.TestCase):
     def test_persona(self):
@@ -8,7 +9,11 @@ class testPersona(unittest.TestCase):
         self.assertEqual(persona.edad, 21)
         self.assertEqual(persona.dni, 423312351)
 
-    def repr_persona(self):
+    def test_repr_persona(self):
         persona = Persona("Joaquin", "Fernandez", 21, 423312351)
-        expected_repr = "Persona: Joaquin Fernandez. Edad: 21. DNI: 423312351"
-        self.assertEqual(repr(persona), expected_repr)
+        expected_repr = "Persona: Joaquin Fernandez. Edad: 21 DNI: 423312351"
+        self.assertEqual(str(persona), expected_repr)
+
+
+if __name__ == '__main__':
+    unittest.main()
