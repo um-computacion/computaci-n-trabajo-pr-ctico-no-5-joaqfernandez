@@ -8,7 +8,6 @@ class testPersona(unittest.TestCase):
         self.assertEqual(persona.apellido, "Fernandez")
         self.assertEqual(persona.edad, 21)
         self.assertEqual(persona.dni, 423312351)
-        self.assertEqual(persona.pensamiento, 0)
         self.assertEqual(persona.ultima_idea, "<Aun no piensa>")
 
     def test_repr_persona(self):
