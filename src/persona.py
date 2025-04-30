@@ -8,4 +8,4 @@ class Persona():
         self.ultima_idea = "<Aun no piensa>"
         
     def __repr__(self):
-        return f"Persona: {self.nombre} {self.apellido}. Edad: {self.edad} DNI: {self.dni}"
+        return f"Persona: {self.nombre} {self.apellido}. Edad: {self.edad} DNI: {self.dni} Ultima idea: {self.ultima_idea}"
