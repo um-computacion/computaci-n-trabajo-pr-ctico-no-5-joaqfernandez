@@ -9,3 +9,8 @@ class testProfesor(unittest.TestCase):
         self.assertEqual(profesor.edad, 37)
         self.assertEqual(profesor.dni, 1290324)
         self.assertEqual(profesor.sueldo, 500)
+
+    def test_repr_profesor(self):
+        profesor = Profesor("Lionel", "Messi", 37, 1290324, 500)
+        expected_repr = "Profesor: Lionel Messi, Edad: 37, DNI: 1290324, Sueldo: 500"
+        self.assertEqual(str(profesor), expected_repr)
