@@ -5,4 +5,5 @@ class Profesor(Persona):
         super().__init__(nombre, apellido, edad, dni)
         self.sueldo = sueldo
         
-    
+    def __repr__(self):
+        return f"Profesor: {self.nombre} {self.apellido}, Edad: {self.edad}, DNI: {self.dni}, Sueldo: {self.sueldo}"
